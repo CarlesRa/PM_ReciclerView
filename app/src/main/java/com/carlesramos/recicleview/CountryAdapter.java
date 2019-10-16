@@ -19,7 +19,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.Banderas
     @NonNull
     @Override
     public CountryAdapter.BanderasViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.listitem_county01, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.listitem_county, parent, false);
         BanderasViewHolder bvh = new BanderasViewHolder(itemView);
         return bvh;
     }
