@@ -6,13 +6,15 @@ public class Country {
     private long population;
     private String capital;
     private String countryIso3;
+    private int imageUrl;
 
-    public Country(String countryCode, String countryName, long population, String capital, String countryIso3) {
+    public Country(String countryCode, String countryName, long population, String capital, String countryIso3, int imageUrl) {
         this.countryCode = countryCode;
         this.countryName = countryName;
-        this.capital = capital;
         this.population = population;
+        this.capital = capital;
         this.countryIso3 = countryIso3;
+        this.imageUrl = imageUrl;
     }
 
     public String getCountryCode() {
@@ -33,5 +35,9 @@ public class Country {
 
     public String getCountryIso3() {
         return countryIso3;
+    }
+
+    public int getImageUrl() {
+        return imageUrl;
     }
 }

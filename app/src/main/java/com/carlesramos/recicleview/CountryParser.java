@@ -37,7 +37,7 @@ public class CountryParser {
      * y los carga en el array countries.
      * @return boolean Devuelve verdadero si ha ido bien. False en caso contrario.
      */
-    public boolean parse() {
+    public boolean parse(Context context) {
         /** Parsed controla si se han podido parsear los datos. Inicialmente a false */
         boolean parsed = false;
         /** Inicializamos a null el array de países */
@@ -66,8 +66,11 @@ public class CountryParser {
                 String countryCapital = item.getAttributes().getNamedItem("capital").getNodeValue();
                 long countryPopulation = Long.valueOf(item.getAttributes().getNamedItem("population").getNodeValue());
                 String countryIso3 = item.getAttributes().getNamedItem("isoAlpha3").getNodeValue();
+                int id = context.getResources().getIdentifier("_"+countryCode.toLowerCase()
+                        , "drawable", context.getPackageName());
+
                 /** Con los datos obtenidos, creamos el objeto Country en la posición i del array */
-                countries[i] = new Country(countryCode, countryName, countryPopulation, countryCapital, countryIso3);
+                countries[i] = new Country(countryCode, countryName, countryPopulation, countryCapital, countryIso3, id);
             }
             /** Si hemos llegado hasta aquí, podemos asegurar que el documento xml ha sido parseado correctamente */
             parsed = true;

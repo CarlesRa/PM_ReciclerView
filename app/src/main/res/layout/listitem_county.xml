@@ -3,94 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/lyPaisos"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="120sp">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBandera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/alert_light_frame" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="91dp"
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/ivBandera"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/alert_light_frame" />
-
             <LinearLayout
-                android:layout_width="301dp"
+                android:layout_width="168dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="168dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvPais"
-                        android:layout_width="match_parent"
-                        android:layout_height="68dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/tvetiquetaCapical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text=" Capital:" />
-
-                        <TextView
-                            android:id="@+id/tvCapital"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvPais"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tvBuit"
-                        android:layout_width="match_parent"
-                        android:layout_height="68dp" />
+                        android:id="@+id/tvEtiquetaCapital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tvetiquetapais" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCapital"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
-                        <TextView
-                            android:id="@+id/tvEtiquetaPoblacio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text=" Población:" />
-
-                        <TextView
-                            android:id="@+id/tvPoblacio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-                    </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBuit"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEtiquetaPoblacio"
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/tvetiquetapoblacion" />
+
+                    <TextView
+                        android:id="@+id/tvPoblacio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
+

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecicleView</string>
+    <string name="tvetiquetapais">Capital:</string>
+    <string name="tvetiquetapoblacion">Población:</string>
 </resources>
